@@ -11,20 +11,15 @@
 		STAR_MIN_SCALE = 0.2,
 		OVERFLOW_THRESHOLD = 50;
 
-		var canvas = document.querySelector('canvas'),
-		context = canvas.getContext('2d');
-
-		var scale = 1, // device pixel ratio
-		width = void 0,
-		height = void 0;
-
-		var stars = [];
-
-		var pointerX = void 0,
-		pointerY = void 0;
-
+		var canvas = document.querySelector('canvas')
+		var context = canvas.getContext('2d')
+		var scale = 1
+		var width = 0
+		var height = 0
+		var stars = []
+		var pointerX = 0
+		var pointerY = 0
 		var velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
-
 		var touchInput = false;
 
 		generate();
